@@ -1,31 +1,149 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>BabyLink</title><style>:root{--bg:#fdf8f3;--fg:#3b302a;--muted:#86766b;--accent:#a85d22;--accent-soft:#f3d9bf;--rose:#f4dcd8;--sky:#dce9f4;--card:#fffdfa;--line:#efe3d6}
-@media (prefers-color-scheme:dark){:root{--bg:#1c1713;--fg:#f1e8de;--muted:#b3a497;--accent:#f0b27a;--accent-soft:#4a3626;--rose:#3a2a2c;--sky:#26303a;--card:#251f1a;--line:#3a3029}}
-*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
-main{max-width:720px;margin:0 auto;padding:24px 16px 64px}
-h1,h2,nav a{font-family:ui-rounded,"SF Pro Rounded",-apple-system,"Segoe UI",sans-serif}
-h1{font-size:32px;line-height:1.2;margin:0 0 6px;font-weight:700}h2{font-size:20px;margin:34px 0 8px;font-weight:650}
-p,li{margin:0 0 10px}ul,ol{padding-left:22px}li::marker{color:var(--accent)}
-a{color:var(--accent);text-underline-offset:3px}.muted{color:var(--muted);font-size:15px}
-nav{display:flex;align-items:center;gap:18px;margin-bottom:28px;font-size:15px}
-nav a{text-decoration:none;font-weight:600;color:var(--fg)}nav a:hover{color:var(--accent)}
-nav .brand{display:flex;align-items:center;gap:8px;margin-right:auto;font-size:17px}
-nav .brand svg{width:26px;height:26px}
-.box{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px 20px;margin:18px 0}
-.hero{position:relative;overflow:hidden;background:var(--card);border:1px solid var(--line);border-radius:24px;padding:28px 22px;margin-bottom:22px}
-.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;z-index:0}
-.hero::before{width:190px;height:190px;right:-95px;top:-110px;background:var(--rose)}
-.hero::after{width:150px;height:150px;right:40px;bottom:-115px;background:var(--sky)}
-.hero>*{position:relative;z-index:1}
-.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
-.pills span{background:var(--accent-soft);border-radius:999px;padding:4px 12px;font-size:14px;font-weight:600}
-footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}</style></head><body><main>
-<nav><a class="brand" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="var(--accent-soft)"/><path d="M20.5 8.5a8 8 0 1 0 3 11.5 6.5 6.5 0 1 1-3-11.5z" fill="var(--accent)"/></svg>BabyLink</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="impressum.html">Impressum</a></nav>
-<div class="hero"><h1>BabyLink</h1><p class="muted">Video baby monitor from the iPhones you already have.</p><p><strong>One iPhone is the camera, your phone is the parent screen.</strong> Live video and sound go directly between your devices over Wi-Fi or a Personal Hotspot.</p>
-<div class="pills"><span>No account</span><span>No internet</span><span>No server</span><span>Nothing recorded</span></div></div>
-<ul><li>Pair once with a QR code</li><li>Up to 4 parent devices</li><li>Sound with the screen locked, picture in picture</li><li>Noise, motion and connection-lost alerts</li><li>Night mode, dimmed camera screen, camera battery level</li></ul>
-<p><a href="support.html">Support</a> &middot; <a href="privacy.html">Privacy Policy</a> &middot; <a href="mailto:babylink.support@gmail.com">babylink.support@gmail.com</a></p>
-<footer>&copy; 2026 Armen Madoyan. BabyLink is not a medical device and does not replace adult supervision.</footer>
-</main></body></html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BabyLink: video baby monitor</title>
+<meta name="description" content="Turn a spare device into a baby camera. Live video and sound directly over your Wi-Fi. No account, no cloud, nothing recorded.">
+<meta name="theme-color" content="#0b0f17">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="wrap site-header">
+  <a class="brand" href="index.html">
+    <svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="9" fill="#161b26"/><path d="M21 9a8 8 0 1 0 4 12 6.4 6.4 0 1 1-4-12z" fill="#e0a458"/><circle cx="9" cy="10" r="1.6" fill="#f0a6c2"/><circle cx="26" cy="27" r="1.6" fill="#9fcbf0"/></svg>
+    BabyLink
+  </a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="#features">Features</a>
+    <a href="#how">How it works</a>
+    <a href="support.html">Support</a>
+  </nav>
+</header>
+
+<main>
+  <section class="wrap hero" id="top">
+    <div class="hero-text">
+      <p class="kicker"><span class="dot amber"></span><span class="dot rose"></span><span class="dot sky"></span>Video baby monitor</p>
+      <h1>Keep an eye on <span>what matters.</span></h1>
+      <p class="lead">Turn a spare device into a baby camera. Watch and listen on your own, directly over your Wi-Fi. No account, no cloud, nothing recorded.</p>
+      <div class="cta">
+        <!-- After the release: replace this with the App Store badge linking to the app. -->
+        <span class="store"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Coming soon to the App Store</span>
+        <span class="price-note">Free for 7 days · then €4.99 once</span>
+      </div>
+    </div>
+    <div class="hero-art" aria-hidden="true">
+      <div class="glow amber"></div>
+      <div class="glow rose"></div>
+      <div class="glow sky"></div>
+      <!-- Screenshots come later: replace the two phones' content with images. -->
+      <div class="phones">
+        <div class="phone camera">Tap to wake</div>
+        <div class="phone parent">
+          <img src="img/app-icon.png" alt="" width="132" height="132">
+          <p>BabyLink</p>
+          <small>Camera · Parent</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" id="features">
+    <h2 class="section-title">Made for the night</h2>
+    <p class="section-lead">Quiet when all is well. Clear when something happens.</p>
+    <div class="tiles">
+      <div class="tile amber">
+        <div class="tile-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/><path d="M10 21a2 2 0 0 0 4 0"/></svg></div>
+        <p class="label">Alerts</p>
+        <h3>Noise and movement alerts</h3>
+        <p>One alert per cry, with a small photo from the camera.</p>
+      </div>
+      <div class="tile amber">
+        <div class="tile-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2M5 3L2 6M19 3l3 3"/></svg></div>
+        <p class="label">Alarms</p>
+        <h3>An alarm only if nobody reacts</h3>
+        <p>Calm by default. If the crying goes on and nobody answers, it rings.</p>
+      </div>
+      <div class="tile sky">
+        <div class="tile-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <p class="label">Never blind</p>
+        <h3>It tells you when it cannot see</h3>
+        <p>A lost connection, a stopped camera or a frozen picture never go unnoticed.</p>
+      </div>
+      <div class="tile sky">
+        <div class="tile-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><rect x="12" y="11" width="7" height="6" rx="1"/></svg></div>
+        <p class="label">Your phone</p>
+        <h3>Use your phone as usual</h3>
+        <p>Sound keeps playing when locked; the video floats in picture in picture.</p>
+      </div>
+      <div class="tile rose">
+        <div class="tile-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></div>
+        <p class="label">Private</p>
+        <h3>Stays between your devices</h3>
+        <p>No account, no cloud, no server, no internet needed. Nothing is recorded.</p>
+      </div>
+      <div class="tile rose">
+        <div class="tile-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M2 20c.8-3.5 3.2-5 6-5s5.2 1.5 6 5M14 15.5c2.7-.6 5.8.6 6.8 4.5"/></svg></div>
+        <p class="label">Family</p>
+        <h3>Up to 4 parents</h3>
+        <p>Add a device with a short code. Everyone gets the video, sound and alerts.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap section" id="how">
+    <h2 class="section-title">Three steps, once</h2>
+    <ol class="steps">
+      <li><span class="num amber">1</span><span><strong>Camera</strong><span>Put a spare device by the crib, open BabyLink, tap Camera.</span></span></li>
+      <li><span class="num rose">2</span><span><strong>Parent</strong><span>On your own device tap Parent and scan the QR code.</span></span></li>
+      <li><span class="num sky">3</span><span><strong>Rest</strong><span>From now on the devices find each other by themselves.</span></span></li>
+    </ol>
+  </section>
+
+  <section class="wrap section" id="price">
+    <div class="price">
+      <div class="glow rose" aria-hidden="true"></div>
+      <div class="glow sky" aria-hidden="true"></div>
+      <h2>Try everything free for 7 days</h2>
+      <p>Then unlock BabyLink once for <strong>€4.99</strong>. No subscription. Family Sharing included. The camera side is always free.</p>
+      <span class="store"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Coming soon to the App Store</span>
+    </div>
+  </section>
+
+  <section class="wrap section">
+    <div class="faq">
+      <h2 class="section-title" style="margin-bottom: 24px">Good to know</h2>
+      <details>
+        <summary>What do I need?</summary>
+        <p>Two or more devices with BabyLink on the same Wi-Fi, or on one phone's hotspot.</p>
+      </details>
+      <details>
+        <summary>Does the camera device need to stay open?</summary>
+        <p>Yes. The camera stops when the device is locked, so BabyLink keeps it open and dims its screen to black. Put it on a charger for the night.</p>
+      </details>
+      <details>
+        <summary>Is anything stored or sent online?</summary>
+        <p>No. There is no server and nothing is recorded. Read the <a href="privacy.html">Privacy Policy</a>.</p>
+      </details>
+      <p class="more">More answers on the <a href="support.html">support page</a>.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="copy">© 2026 Armen Madoyan</span>
+    <a href="support.html">Support</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="impressum.html">Impressum</a>
+    <p class="note">BabyLink is not a medical device and does not replace adult supervision.</p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,36 +1,123 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>BabyLink Support</title><style>:root{--bg:#fdf8f3;--fg:#3b302a;--muted:#86766b;--accent:#a85d22;--accent-soft:#f3d9bf;--rose:#f4dcd8;--sky:#dce9f4;--card:#fffdfa;--line:#efe3d6}
-@media (prefers-color-scheme:dark){:root{--bg:#1c1713;--fg:#f1e8de;--muted:#b3a497;--accent:#f0b27a;--accent-soft:#4a3626;--rose:#3a2a2c;--sky:#26303a;--card:#251f1a;--line:#3a3029}}
-*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
-main{max-width:720px;margin:0 auto;padding:24px 16px 64px}
-h1,h2,nav a{font-family:ui-rounded,"SF Pro Rounded",-apple-system,"Segoe UI",sans-serif}
-h1{font-size:32px;line-height:1.2;margin:0 0 6px;font-weight:700}h2{font-size:20px;margin:34px 0 8px;font-weight:650}
-p,li{margin:0 0 10px}ul,ol{padding-left:22px}li::marker{color:var(--accent)}
-a{color:var(--accent);text-underline-offset:3px}.muted{color:var(--muted);font-size:15px}
-nav{display:flex;align-items:center;gap:18px;margin-bottom:28px;font-size:15px}
-nav a{text-decoration:none;font-weight:600;color:var(--fg)}nav a:hover{color:var(--accent)}
-nav .brand{display:flex;align-items:center;gap:8px;margin-right:auto;font-size:17px}
-nav .brand svg{width:26px;height:26px}
-.box{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px 20px;margin:18px 0}
-.hero{position:relative;overflow:hidden;background:var(--card);border:1px solid var(--line);border-radius:24px;padding:28px 22px;margin-bottom:22px}
-.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;z-index:0}
-.hero::before{width:190px;height:190px;right:-95px;top:-110px;background:var(--rose)}
-.hero::after{width:150px;height:150px;right:40px;bottom:-115px;background:var(--sky)}
-.hero>*{position:relative;z-index:1}
-.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
-.pills span{background:var(--accent-soft);border-radius:999px;padding:4px 12px;font-size:14px;font-weight:600}
-footer{margin-top:48px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}</style></head><body><main>
-<nav><a class="brand" href="index.html"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="var(--accent-soft)"/><path d="M20.5 8.5a8 8 0 1 0 3 11.5 6.5 6.5 0 1 1-3-11.5z" fill="var(--accent)"/></svg>BabyLink</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="impressum.html">Impressum</a></nav>
-<h1>BabyLink Support</h1><p>Questions, problems or ideas? Write to <a href="mailto:babylink.support@gmail.com">babylink.support@gmail.com</a>. I usually answer within a few days. Please include your iPhone models and iOS versions.</p>
-<h2>What you need</h2><ul><li>Two or more iPhones with BabyLink installed: one is the Camera, the others are Parents (up to 4).</li><li>All devices on the same Wi-Fi network, or connected to one iPhone&rsquo;s Personal Hotspot.</li><li>&ldquo;Local Network&rdquo; allowed for BabyLink on every device (Settings &rsaquo; Privacy &amp; Security &rsaquo; Local Network &rsaquo; BabyLink).</li></ul>
-<h2>Getting started</h2><ol><li>On the phone near the baby, open BabyLink and tap <strong>Baby camera</strong>. A QR code appears.</li><li>On your phone, tap <strong>Parent</strong> and scan the QR code.</li><li>Done. Next time the devices find each other automatically.</li></ol><p>To add more parents: open <strong>Devices</strong> and show the code to the new device.</p>
-<h2>The devices can&rsquo;t find each other</h2><ul><li>Check that all devices are on the same Wi-Fi network.</li><li>Hotel and guest Wi-Fi often block devices from talking to each other. Use a Personal Hotspot from one of the iPhones instead.</li><li>Check that Local Network is allowed for BabyLink on every device.</li><li>Keep BabyLink open on the camera device.</li></ul>
-<h2>I can&rsquo;t hear anything</h2><p>Sound starts muted on every connection, so phones near each other don&rsquo;t whistle. Tap the sound button on the parent screen.</p>
-<h2>The video stops when the camera phone is locked</h2><p>iOS stops the camera when the phone is locked. Keep BabyLink open on the camera phone; it dims its screen to black by itself. Connect it to a charger for the night.</p>
-<h2>Alerts during phone calls</h2><p>If the camera phone gets a call, video may pause. BabyLink shows a &ldquo;Call on the camera&rdquo; alert. Tip: put the camera phone in Airplane mode with Wi-Fi on. BabyLink shows a short checklist.</p>
-<h2>Privacy</h2><p>BabyLink has no account and no server. Video and sound go only between your devices and are never recorded. Read the <a href="privacy.html">Privacy Policy</a>.</p>
-<h2>Important</h2><p>BabyLink is not a medical device. It does not track breathing or prevent SIDS and does not replace adult supervision. Always follow safe sleep guidance.</p>
-<footer>&copy; 2026 Armen Madoyan. BabyLink is not a medical device and does not replace adult supervision.</footer>
-</main></body></html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BabyLink Support</title>
+<meta name="theme-color" content="#0b0f17">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Made by scripts/support-page.mjs in the app's repository from src/lib/helpTexts.ts.
+     Change the texts there and run the script again; edits made here are overwritten. -->
+
+<header class="wrap site-header">
+  <a class="brand" href="index.html">
+    <svg viewBox="0 0 34 34" aria-hidden="true"><rect width="34" height="34" rx="9" fill="#161b26"/><path d="M21 9a8 8 0 1 0 4 12 6.4 6.4 0 1 1-4-12z" fill="#e0a458"/><circle cx="9" cy="10" r="1.6" fill="#f0a6c2"/><circle cx="26" cy="27" r="1.6" fill="#9fcbf0"/></svg>
+    BabyLink
+  </a>
+  <nav class="site-nav" aria-label="Main">
+    <a href="index.html#features">Features</a>
+    <a href="index.html#how">How it works</a>
+    <a href="support.html" aria-current="page">Support</a>
+  </nav>
+</header>
+
+<main class="doc">
+<h1>Support</h1>
+<p>Questions, problems or ideas? Write to <a href="mailto:babylink.support@gmail.com">babylink.support@gmail.com</a>. I usually answer within a few days. Please tell me your device models and their software versions.</p>
+<p class="toc"><a href="#how-to-use">How to use</a><a href="#troubleshooting">Troubleshooting</a></p>
+
+<div class="box">
+<p><strong>What you need</strong></p>
+<ul>
+<li>Two or more devices with BabyLink: one is the camera, the others are parents (up to 4).</li>
+<li>All of them on the same Wi-Fi, or on one device’s hotspot.</li>
+<li>Local Network allowed for BabyLink on every device: iPhone Settings → Privacy &amp; Security → Local Network → BabyLink.</li>
+</ul>
+</div>
+
+<h2 class="part" id="how-to-use">How to use</h2>
+<h3 id="set-up">Set up</h3>
+<details><summary>How do I start?</summary><ol><li>On the device that stays with the baby: open BabyLink, tap Camera. It shows a code.</li><li>On your device: tap Parent and scan the code.</li><li>Done. Next time the devices find each other by themselves.</li></ol></details>
+<details><summary>Where do I put the camera device?</summary><p>About 1–2 m from the baby, out of reach, with the whole bed in the picture. Keep it plugged in. Not under a blanket or in the sun: it gets warm.</p></details>
+<details><summary>What is “Before you leave”?</summary><p>A short list on the camera device: airplane mode with Wi-Fi on, Do Not Disturb, silent, charger. It stops calls and sounds from waking the baby. Open it again with the ! button.</p></details>
+<details><summary>Can I lock the camera device?</summary><p>With video: no. iPhone stops the camera when it locks. The screen goes dark by itself after 30 seconds, that is enough.</p><p>With Audio only: yes, sound keeps going.</p></details>
+<details><summary>Does it need the internet?</summary><p>No. Only that both devices are on the same Wi-Fi, or on one device’s hotspot. Nothing leaves your home: no account, no server.</p></details>
+<h3 id="the-watching-screen">The watching screen</h3>
+<details><summary>What does the pill at the top show?</summary><p>The connection in one word (Live, Weak, No video, No sound, Lost), how late the picture is, and the camera device’s battery. Tap it for details.</p></details>
+<details><summary>What are the buttons at the bottom?</summary><p>Left to right: Devices · Sound · Settings · Camera · Stop. The ☰ at the top left opens the main menu.</p></details>
+<details><summary>What is the arc around the sound button?</summary><p>How loud it is by the baby right now. The small arrow is where the Noise alert starts. A blue button means the sound is off on this device.</p></details>
+<details><summary>What is the arc around the camera button?</summary><p>How much moves in the picture. The arrow is where the Motion alert starts. A blue button means the video is off (Audio only).</p></details>
+<details><summary>How do I zoom?</summary><p>Pinch with two fingers. Double tap for 2×. Drag to move around. Only the picture here zooms; the camera device is not touched.</p></details>
+<details><summary>Can I use other apps while watching?</summary><p>Yes. Tap the picture-in-picture button at the top right, then swipe up: a small video stays on top. Sound and alerts keep working with the screen locked too.</p></details>
+<details><summary>Can I turn the phone?</summary><p>Yes. The picture and the cards turn with it; the buttons stay at their edges. The rotation lock in Control Center keeps everything upright.</p></details>
+<h3 id="sound-and-alerts">Sound and alerts</h3>
+<details><summary>Why is there no sound?</summary><p>Sound is off every time you start, so two devices in one room don’t whistle. Tap the blue sound button, then “Turn sound on”.</p></details>
+<details><summary>When do I get a Noise alert?</summary><p>When a sound lasts long enough. Low: loud crying for 8 seconds. Medium: crying for 5 seconds. High: quiet sounds for 3 seconds. Change it in the sound menu.</p></details>
+<details><summary>When does the alarm ring?</summary><p>Only when you may have missed something: your baby has cried for a minute and you did not react (sound off here), or BabyLink has not been able to watch for about a minute. It starts quietly and gets louder.</p></details>
+<details><summary>How do I stop the alarm?</summary><p>Touch the screen, open BabyLink, or press and hold the notification and tap Stop alarm. If the crying goes on, BabyLink tells you again after two minutes.</p></details>
+<details><summary>What does OK on a card do?</summary><p>“I have seen it.” The card goes away; while the crying goes on, a small line under the pill keeps the time.</p></details>
+<details><summary>Can I change when the alarm rings?</summary><p>In the main menu (☰), Alarms: 30 seconds, 1 minute or 2 minutes, and a switch for each alarm. With a switch off you still get the vibration and the notification.</p></details>
+<details><summary>Will the alarm ring when my phone is on silent?</summary><p>Yes. But it cannot be louder than your phone’s volume: keep the volume up at night.</p></details>
+<details><summary>What is the Motion alert?</summary><p>A notification when something moves for a while. Off at first. It never rings the alarm.</p></details>
+<details><summary>What is the photo in notifications?</summary><p>The last picture from the camera, shown in Noise and Movement notifications, also on your lock screen. Turn it off in Settings (the gear) on the watching screen.</p></details>
+<details><summary>What do the blue banners mean?</summary><p>Something to know, not an alarm: the camera device’s battery is low, it is hot, a call rings there, or notifications are off. Red means only that BabyLink cannot watch right now.</p></details>
+<h3 id="the-camera-from-your-device">The camera, from your device</h3>
+<details><summary>Video (Audio only)</summary><p>Turns the picture off and keeps the sound. Saves battery and keeps the camera device cool. Good for the night: in a dark room the picture shows little anyway.</p></details>
+<details><summary>Night</summary><p>A brighter picture in low light, with fewer frames a second.</p></details>
+<details><summary>Screen</summary><p>Turns the camera device’s screen dark or back on.</p></details>
+<details><summary>Light</summary><p>The flashlight on the camera device, from 1 %. BabyLink asks first: it may wake the baby.</p></details>
+<details><summary>Flip</summary><p>Back or front camera.</p></details>
+<h3 id="more-devices">More devices</h3>
+<details><summary>How do I add another parent?</summary><p>Open Devices, tap “Add a device”. On the new device: Parent, then scan the code or tap “I have a code”. The code works once, for 10 minutes. Up to 4 parent devices.</p></details>
+<details><summary>How do I rename or remove a device?</summary><p>In Devices: tap the name to rename it, tap × to remove it. Any device can do this.</p></details>
+<details><summary>How do I swap camera and parent?</summary><p>In Devices, Swap. Works with two devices. Or just tap Camera on the home screen of the parent device: it asks and swaps.</p></details>
+<details><summary>What do Leave and Disconnect all do?</summary><p>Leave: only this device leaves, the others keep working.</p><p>Disconnect all (on the camera device): everyone is disconnected. To use them again, pair with a new code.</p></details>
+<h3 id="privacy-and-safety">Privacy and safety</h3>
+<details><summary>Who can see my baby?</summary><p>Only the devices you paired. Video and sound go straight from one device to the other over your Wi-Fi, encrypted. There is no server and no account. Nothing is recorded.</p></details>
+<details><summary>Is BabyLink a medical device?</summary><p>No. It does not watch breathing or health. It does not replace you checking on your baby.</p></details>
+
+<h2 class="part" id="troubleshooting">Troubleshooting</h2>
+<h3 id="no-connection">No connection</h3>
+<details><summary>“Looking for the camera...” and nothing happens</summary><ol><li>Open BabyLink on the camera device and unlock it.</li><li>Both devices on the same Wi-Fi?</li><li>iPhone Settings → Privacy &amp; Security → Local Network → BabyLink: on, on both devices.</li><li>Still nothing: Leave, then pair again with the code.</li></ol></details>
+<details><summary>“Connection lost”</summary><p>BabyLink keeps trying by itself. Check the Wi-Fi and that the camera device is on, unlocked and has power.</p></details>
+<details><summary>It does not work in a hotel or on guest Wi-Fi</summary><p>Many of these networks do not let devices talk to each other. Use one device’s hotspot (it needs mobile data) or a small travel router.</p></details>
+<details><summary>The pill says “Weak”</summary><p>The Wi-Fi is slow there. Move the camera device or the router closer.</p></details>
+<h3 id="no-picture-or-sound">No picture or sound</h3>
+<details><summary>“Camera video stopped”</summary><p>BabyLink on the camera device was closed, or the device was locked. Open it there, or tap “Switch to audio only” to keep listening.</p></details>
+<details><summary>“Video paused”</summary><p>No new picture arrives. Sound may still work. It usually comes back by itself.</p></details>
+<details><summary>“No sound from the camera”</summary><p>Check the camera device: is BabyLink open, is a call going on?</p></details>
+<details><summary>“The camera was stopped”</summary><p>Someone pressed Stop on the camera device. Tap “Start camera” to start it again.</p></details>
+<details><summary>A loud whistle</summary><p>The two devices are too close with sound on. Turn sound off or move apart.</p></details>
+<h3 id="alerts">Alerts</h3>
+<details><summary>I did not hear the alarm</summary><p>Check your phone’s volume. Then iPhone Settings → Notifications → BabyLink: allowed, with Time Sensitive on. Try Test alarm in the main menu (☰), under Alarms. Check the Alarms switches too.</p></details>
+<details><summary>No alerts while BabyLink was closed</summary><p>BabyLink watches only while it runs. Don’t swipe it away. If it is closed, iPhone shows “BabyLink is not watching” about a minute later.</p></details>
+<details><summary>Too many Noise alerts</summary><p>Set Noise alert to Low in the sound menu. During a call on the camera device Noise alerts pause by themselves.</p></details>
+<details><summary>Movement alerts when a lamp is switched on</summary><p>A sudden change of light can look like movement. Use Low, or turn the Motion alert off.</p></details>
+<h3 id="the-camera-device">The camera device</h3>
+<details><summary>“Call on the camera device”</summary><p>A call rang there; the video may stop until it ends. Turn on airplane mode on the camera device, then Wi-Fi again (see “Before you leave”).</p></details>
+<details><summary>“Camera device is hot”</summary><p>Take it out of its case, away from blankets and the sun. Audio only keeps it cooler.</p></details>
+<details><summary>“Camera battery low”</summary><p>The camera device’s battery is under 20 % and it is not charging. Plug it in.</p></details>
+<details><summary>The camera device is not found after I changed the Wi-Fi</summary><p>Give it a minute: it announces itself again. Still nothing: Stop and start the camera there.</p></details>
+
+<h2 class="part" id="important">Important</h2>
+<p>BabyLink is not a medical device. It does not watch breathing or health, does not prevent SIDS and does not replace adult supervision. Always follow safe sleep guidance.</p>
+<p>Still stuck? Write to <a href="mailto:babylink.support@gmail.com">babylink.support@gmail.com</a>.</p>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="copy">© 2026 Armen Madoyan</span>
+    <a href="support.html">Support</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="impressum.html">Impressum</a>
+    <p class="note">BabyLink is not a medical device and does not replace adult supervision.</p>
+  </div>
+</footer>
+
+</body>
+</html>
